@@ -174,7 +174,8 @@ nav{
 .row{
   display: flex;
   flex-wrap: wrap;
-  margin-left: -9px;
+  margin-top: 20px;
+  margin-left: 9px;
 }
 
 .column{
@@ -185,7 +186,7 @@ nav{
 }
 
 .column img{
-  margin-top: 8px;
+  margin-top: 9px;
   vertical-align: middle;
   width: 95%;
 }
