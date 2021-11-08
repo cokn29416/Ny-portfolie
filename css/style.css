@@ -166,6 +166,11 @@ nav{
 
 #home p{
   font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+#home a{
+  font-family: 'Montserrat', sans-serif;
   font-size: 20px;
 }
 
@@ -195,6 +200,11 @@ nav{
 #about p{
   font-family: Montserrat;
   border: 5px;
+  font-size: 16px;
+}
+
+#about a{
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
 }
 
