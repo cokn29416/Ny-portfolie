@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link rel="stylesheet" href="css/code.css">
+    <script src="js/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <title></title>
+  </head>
+
+  <body>
+    <!--Start nav section-->
+      <nav>
+        <div class="logo">
+          <h4>COEK MEDIA</h4>
+        </div>
+
+        <ul class="nav-links">
+          <li>
+            <a href="">Hjem</a>
+          </li>
+          <li>
+            <a href="">Om mig</a>
+          </li>
+          <li>
+            <a href="index.html#portfolie">Portfolie</a>
+          </li>
+          <li>
+            <a href="">Kontakt</a>
+          </li>
+        </ul>
+
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    <!-- End nav -->
+
+    <!-- Start Intro-->
+    <section id="intro">
+      <h1>Kode</h1>
+      <p>Her under ses noget af det kode, som jeg har kodet igennem tiden på multimedieuddannelsen. Der vil både fremgå HTML, CSS og Javascript.
+      </p>
+    </section>
+    <!--End Intro-->
+
+    <!--Start progress-->
+    <section id="progress">
+      <article class="progress flex">
+      <div class="container">
+        <h1>Progressbar</h1>
+        <div id="stepProgressBar">
+          <div class="step">
+            <div class="bullet"></div>
+            <p class="step-text">1</p>
+          </div>
+
+          <div class="step">
+            <div class="bullet"></div>
+            <p class="step-text">2</p>
+          </div>
+
+          <div class="step">
+            <div class="bullet-final"></div>
+            <p class="step-text">3</p>
+          </div>
+
+        <div id="main">
+          <p id="content"></p>
+          <button class="btn" id="previousBtn" disabled>Prev</button>
+          <button class="btn" id="nextBtn">Next</button>
+          <button class="btn" id="finishBtn" disabled>Søg</button>
+        </div>
+      </div>
+    </div>
+</article>
+
+
+<article class="snip flex">
+      <aside>
+        <h2>HTML</h2>
+        <hr>
+        <pre>
+        <p class="code"></p>
+          <code class="center flex">
+&lt;div class="container"&gt;
+  &#x3C;h1&#x3E;"Progressbar"&#x3C;/h1&#x3E;
+    &#x3C;div id="stepProgressBar"&#x3E;
+      &#x3C;div class="step"&#x3E;
+        &#x3C;div class="bullet"&#x3E;&#x3C;/div&#x3E;
+        &#x3C;p class="step-text"&#x3E;1&#x3C;/p&#x3E;
+      &#x3C;/div&#x3E;
+
+      &#x3C;div class="step"&#x3E;
+        &#x3C;div class="bullet"&#x3E;&#x3C;/div&#x3E;
+        &#x3C;p class="step-text"&#x3E;2&#x3C;/p&#x3E;
+      &#x3C;/div&#x3E;
+
+      &#x3C;div class="step"&#x3E;
+        &#x3C;div class="bullet"&#x3E;&#x3C;/div&#x3E;
+        &#x3C;p class="step-text"&#x3E;3&#x3C;/p&#x3E;
+      &#x3C;/div&#x3E;
+
+    &#x3C;div id="main"&#x3E;
+      &#x3C;p id="content"&#x3E;&#x3C;/p&#x3E;
+        &#x3C;button class="btn" id="previousBtn" disabled&#x3E;Prev&#x3C;/div&#x3E;
+        &#x3C;button class="btn" id="nextBtn"&#x3E;Next&#x3C;/div&#x3E;
+        &#x3C;button class="btn" id="finishBtn" disabled&#x3E;Søg&#x3C;/div&#x3E;
+      &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+  &#x3C;/div&#x3E;
+        </code>
+      </pre>
+    </aside>
+
+      <aside>
+        <h2>CSS</h2>
+        <hr>
+        <pre>
+        <p class="code"></p>
+          <code class="center flex">
+.hidden{
+  display: none;
+}
+
+.btn{
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  background-color: #113c5c;
+  color: #fff;
+  height: 5vh;
+  width: 100px;
+}
+
+.btn:hover{
+  cursor: pointer;
+  background-color: #303030;
+  color: white;
+}
+
+.btn:disabled:hover{
+  opacity: 0.6;
+  cursor: not-allowed;
+  background-color: #303030
+}
+
+.container{
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 50px;
+  margin-top: -200px;
+  margin-right: 100px;
+}
+
+#stepProgressBar{
+  width: 700px;
+  margin: 10px auto;
+  margin-bottom: 40px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.step-text{
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-top: 22px;
+  position: absolute;
+  color: black;
+  text-align: left;
+}
+
+.bullet{
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  display: inline-block;
+  margin: 15px;
+  background-color: #56A0D3;
+  position: relative;
+  transition: #D9D9D9 500ms;
+  line-height: 20px;
+}
+
+.bullet-final{
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  display: inline-block;
+  margin: 15px;
+  background-color: #56A0D3;
+  position: relative;
+  transition: #D9D9D9 500ms;
+  line-height: 20px;
+}
+
+.bullet-search{
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  display: inline-block;
+  margin: 1px;
+  background-color: #56A0D3;
+  position: relative;
+  transition: #56A0D3 500ms;
+  line-height: 20px;
+}
+
+.bullet::before{
+  content: '';
+  height: 60px;
+  position: absolute;
+  width: 5px;
+  background-color:#56A0D3;
+  top:10px;
+  right:12px;
+  bottom: 10px;
+}
+
+.bullet.completed{
+  color: white;
+  background-color: #113c5c;
+}
+
+.bullet.completed::after{
+  content: '';
+  height:60px;
+  position: absolute;
+  width: 5px;
+  background-color:#113c5c;
+  top: 10px;
+  right:12px;
+  bottom:10px;
+}
+          </code>
+        </pre>
+      </aside>
+
+      <aside>
+        <h2>JS</h2>
+        <hr>
+        <pre>
+        <p class="code"></p>
+          <code class="center flex">
+const navSlide = () =>{
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.nav-links');
+  const navLinks = document.querySelectorAll('.nav-links li');
+
+burger.addEventListener('click', () => {
+  nav.classList.toggle('nav-active');
+
+  navLinks.forEach((link,index) => {
+    if(link.style.animation){
+      link.style.animation = '';
+    }else{
+      link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+    }
+  });
+
+  burger.classList.toggle('toggle');
+  });
+}
+
+navSlide();
+          </code>
+        </pre>
+      </aside>
+    </article>
+
+      <footer>
+      <p> <b>Sådan kan den bruges:</b> Progressbaren har jeg haft benyttet ved en kontakrformular
+      for at vise hvor langt man var kommet. Den har også været benyttet ved et afkrydsnings skema.</p>
+    </footer>
+    </section>
+<!--End progess-->
+
+<!--Slide start -->
+<section id="Validering">
+  <h1>Validering</h1>
+    <article class="validering flex">
+    <div class="showcaseform">
+      <div class="form1">
+        <input placeholder="Alder" type="number" id="number">
+        <input placeholder="Ynlingsfarve" type="text" id="color">
+      </div>
+
+      <div class="form2">
+        <input placeholder="Skomærke" type="text" id="shoe">
+        <input placeholder="Plante" type="text" id="plant">
+      </div>
+
+      <div class="formBtn">
+        <button type="button" id="btn" onClick="refresh()">Send</button>
+      </div>
+    </div>
+  </article>
+
+  <article class="snip flex">
+    <aside>
+      <h2>HTML</h2>
+      <hr>
+      <pre>
+      <p class="code"></p>
+        <code class="center flex">
+&lt;h1&gt;Validering&lt;/h1&gt;
+  &lt;article class="validering flex"&gt;
+  &lt;div class="showcaseform"&gt;
+    &lt;div class="form1"&gt;
+      &lt;input placeholder="Alder" type="number" id="number"&gt;
+      &lt;input placeholder="Ynglingsfarve" type="text" id="color"&gt;
+    &lt;/div&gt;
+
+    &lt;div class="form2"&gt;
+      &lt;input placeholder="Skomærke" type="text" id="shoe"&gt;
+      &lt;input placeholder="Plante" type="text" id="plant"&gt;
+    &lt;/div&gt;
+
+    &#x3C;div class="formBtn"&#x3E;
+      &#x3C;button type="button" id="btn" onClick="refresh()"&#x3E;Send&#x3C;/button&#x3E;
+    &lt;/div&gt;
+  &lt;/div&gt;
+        </code>
+      </pre>
+    </aside>
+
+    <aside>
+      <h2>CSS</h2>
+      <hr>
+      <pre>
+      <p class="code"></p>
+        <code class="center flex">
+.showcaseform{
+  height: 35vh;
+  width: 50vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10% 80% 10%;
+  grid-gap: 5%;
+  position: relative;
+}
+
+.form1{
+  grid-column: 1/1;
+  grid-row: 2/2;
+  height: 35vh;
+  width: 100%;
+  max-width: 50vh;
+  position: relative;
+}
+
+.form1 input{
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 13px;
+  width: 100%;
+  border: 1.5px solid #114b54;
+}
+
+.form2{
+  grid-column: 2/2;
+  grid-row: 2/2;
+  height: 35vh;
+  width: 100%;
+  max-width: 50vh;
+  position: relative;
+}
+
+.form2 input{
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 13px;
+  width: 100%;
+  border: 1.5px solid #113c5c;
+}
+
+.formBtn{
+  grid-column: 1/2;
+  grid-row: 3/3;
+  height: 10vh;
+  width: 210%;
+  margin-top: 20px;
+  position: relative;
+  margin-top: -50px;
+  text-align: center;
+}
+
+.formBtn button{
+  position: relative;
+  padding: 10;
+  cursor: pointer;
+  border-radius: 15px;
+  border: none;
+  background-color: #113c5c;
+  color: #fff;
+  height: 5vh;
+  width: 150px;
+}
+
+.formBtn button:hover{
+  background-color: #303030;
+  transition: 1s;
+}
+        </code>
+      </pre>
+    </aside>
+
+    <aside>
+      <h2>JS</h2>
+      <hr>
+      <pre>
+      <p class="code"></p>
+        <code class="center flex">
+const btn = document.getElementById('btn')
+function refresh(){
+  window.parent.location = window.parent.location.href;
+}
+
+btn.addEventListener("click", function(){
+  const number = document.getElementById('number');
+  const color = document.getElementById('color');
+  const shoe = document.getElementById('shoe');
+  const plant = document.getElementById('plant');
+
+  if (number.value == "") {
+    window.alert("Indtast alder.");
+    number.focus();
+  return false;
+  }
+
+  if (color.value == "") {
+    window.alert("Indtast din ynglingsfarve.");
+    number.focus();
+  return false;
+  }
+
+  if (shoe.value == "") {
+    window.alert("Indtast et skomærke.");
+    number.focus();
+    return false;
+    }
+
+  if (plant.value == "") {
+    window.alert("Indtast navnet på en plante.");
+    number.focus();
+    return false;
+    }
+  return false;
+});
+        </code>
+      </pre>
+    </aside>
+  </article>
+
+  <footer>
+    <p> <b>Sådan kan den bruges:</b> Validering kan benyttes til at vise hvor man f.eks. mangler at svare på noget, i et spørgerskema eller lignenden.</p>
+  </footer>
+</section>
+
+
+
+
+
+
+
+    <!--Start Footer-->
+    <footer id="footer">
+      <p>COEK MEDIA 2020-2022</p>
+    </footer>
+
+  </body>
+</html>
