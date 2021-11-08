@@ -7,20 +7,6 @@
 body{
   background: #a9dde5;
 }
-
-h1{
-  font-family:'Montserrat', sans-serif;
-}
-
-h2{
-  font-family:'Montserrat', sans-serif;
-}
-
-p{
-  font-family:'Montserrat', sans-serif;
-  font-size: 16px;
-}
-
 /* Start Nav*/
 nav{
   display: flex;
@@ -194,13 +180,14 @@ i{
 
 /* Start Home*/
 #home{
-  margin-left:100px;
+  margin-left: 40px;
   padding-top: 50px;
 }
 
 #home h1{
   font-family: 'Montserrat', sans-serif;
   font-size: 50px;
+  text-align: center;
 }
 
 #home h2{
@@ -211,11 +198,13 @@ i{
 
 #home p{
   font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
+  font-size: 16px;
+  text-align: center;
 }
 .row{
   display: flex;
   flex-wrap: wrap;
+  margin-top: 20px;
   margin-left: -9px;
 }
 
@@ -223,11 +212,11 @@ i{
   flex: 25%;
   max-width: 45.8%;
   width: 100px;
-  padding: 5px;
+  padding: 10px;
 }
 
 .column img{
-  margin-top: 8px;
+  margin-top: 30px;
   vertical-align: middle;
   width: 95%;
 }
@@ -245,10 +234,9 @@ i{
 /*Footer*/
 footer{
   display: flex;
-  margin-top: 100px;
   min-height: 8vh;
   background-color:#114b54;
-  margin-top: 600px;
+  margin-top: 40px;
 }
 
 footer p{
