@@ -88,6 +88,11 @@ nav{
   .logo{
     margin-left: -50px;
   }
+
+  #about img{
+    height: 45%;
+    width: 45%;
+  }
 }
 
 
@@ -201,6 +206,7 @@ nav{
   font-family: Montserrat;
   border: 5px;
   font-size: 16px;
+  width: 50%;
 }
 
 #about a{
@@ -208,9 +214,20 @@ nav{
   font-size: 16px;
 }
 
-.about-img{
-  float: left;
-  background: url(./img/potræt1.jpg);
+#about img{
+  height: 45%;
+  width: 45%;
+  margin-left: 700px;
+  margin-top: -400%;
+}
+
+@media screen and (max-width:1024px){
+  #about img{
+    height: 45%;
+    width: 45%;
+    margin-left: 1px;
+    margin-top: 10px;
+  }
 }
 /*End about*/
 
